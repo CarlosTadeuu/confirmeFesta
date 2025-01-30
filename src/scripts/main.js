@@ -15,5 +15,7 @@ const contaHoras = setInterval(function () {
 	const minuto = Math.floor((diferencaTempo % horaEmMS) / minutoEmMS);
 	const segundo = Math.floor((diferencaTempo % minutoEmMS) / 1000);
 
-	document.getElementById("contador").innerHTML = `${dia}d ${hora}h ${minuto}m ${segundo}s`;
+	document.getElementById(
+		"contador"
+	).innerHTML = `${dia} dias - ${hora} horas - ${minuto} minutos - ${segundo} segundos`;
 }, 1000);

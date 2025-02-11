@@ -10,6 +10,7 @@
 		border-bottom: solid 1px #fff;
 	}
 	&__grup {
+		overflow: hidden;
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
@@ -24,9 +25,11 @@
 				border-radius: 20px;
 				margin-bottom: 20px;
 
+				@media (max-width: 768px) {
+					flex-direction: column;
+				}
 				.text {
 					padding: 20px;
-
 					h3 {
 						padding-bottom: 20px;
 					}
@@ -35,6 +38,10 @@
 				img {
 					width: 200px;
 					border-radius: 20px;
+
+					@media (max-width: 768px) {
+						width: 100%;
+					}
 				}
 			}
 		}
